@@ -6,11 +6,13 @@ import "./App.css";
 import Header from "./Components/Header.jsx";
 import Footer from "./Components/Footer/Footer.jsx";
 import Home from "./Components/Home.jsx";
+
 function App() {
   return (
     <>
       <Header />
       <Home />
+
       <Footer />
     </>
   );
