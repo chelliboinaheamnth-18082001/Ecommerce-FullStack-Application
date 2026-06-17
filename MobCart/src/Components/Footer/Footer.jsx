@@ -1,25 +1,35 @@
-import "./Footer.css"; // ✅ Import your CSS file
-
 const Footer = () => {
   return (
-    <footer className="footer">
-      <div className="container footer-container">
-        <p className="footer-text">
+    <footer className="bg-gray-100 border-t border-gray-300 py-6">
+      <div className="container mx-auto flex flex-col md:flex-row justify-between items-center px-4">
+        {/* Copyright */}
+        <p className="text-sm text-gray-600 font-medium mb-4 md:mb-0">
           © {new Date().getFullYear()} MobCart. All rights reserved.
         </p>
-        <ul className="footer-links">
+
+        {/* Links */}
+        <ul className="flex space-x-6 text-sm">
           <li>
-            <a href="/privacy" className="footer-link">
+            <a
+              href="/privacy"
+              className="text-gray-600 hover:text-blue-600 transition-colors duration-300"
+            >
               Privacy Policy
             </a>
           </li>
           <li>
-            <a href="/terms" className="footer-link">
+            <a
+              href="/terms"
+              className="text-gray-600 hover:text-blue-600 transition-colors duration-300"
+            >
               Terms of Service
             </a>
           </li>
           <li>
-            <a href="/support" className="footer-link">
+            <a
+              href="/support"
+              className="text-gray-600 hover:text-blue-600 transition-colors duration-300"
+            >
               Support
             </a>
           </li>
